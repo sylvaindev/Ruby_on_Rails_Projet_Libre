@@ -12,6 +12,10 @@ body{
   background-color: $background;
 }
 
+a{
+  cursor: pointer;
+}
+
 /* NAVBAR */
 
 nav{
@@ -66,6 +70,11 @@ header > nav > div > a.brand-logo > img{
 
 .btn-floating:hover{
   background-color: $fabhover;
+}
+
+.fixed-action-btn{
+  bottom: 45px;
+  right: 24px;
 }
 
 /* MEDIA QUERIES */

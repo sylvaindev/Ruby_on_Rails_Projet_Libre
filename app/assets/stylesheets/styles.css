@@ -3,6 +3,9 @@
 body {
   background-color: #d8e9ef; }
 
+a {
+  cursor: pointer; }
+
 /* NAVBAR */
 nav {
   background-color: #454552; }
@@ -43,6 +46,10 @@ header > nav > div > a.brand-logo > img {
 
 .btn-floating:hover {
   background-color: #d24f65; }
+
+.fixed-action-btn {
+  bottom: 45px;
+  right: 24px; }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 892px) {
