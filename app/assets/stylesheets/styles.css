@@ -19,6 +19,14 @@ nav ul a:hover {
 #menudropdown > li > a {
   color: white; }
 
+nav .brand-logo {
+  text-align: center; }
+
+header > nav > div > a.brand-logo > img {
+  margin-top: 2px;
+  width: 58px;
+  margin-left: 10px; }
+
 /* NAVBAR MOBILE */
 #mobile-demo {
   background-color: #454552; }
@@ -35,5 +43,10 @@ nav ul a:hover {
 
 .btn-floating:hover {
   background-color: #d24f65; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 892px) {
+  nav .brand-logo {
+    margin-left: 0px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -34,6 +34,16 @@ nav ul a:hover{
   color: $text;
 }
 
+nav .brand-logo{
+  text-align: center;
+}
+
+header > nav > div > a.brand-logo > img{
+  margin-top: 2px;
+  width: 58px;
+  margin-left: 10px;
+}
+
 /* NAVBAR MOBILE */
 
 #mobile-demo{
@@ -56,4 +66,12 @@ nav ul a:hover{
 
 .btn-floating:hover{
   background-color: $fabhover;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 892px) {
+  nav .brand-logo{
+    margin-left: 0px;
+  }
 }
