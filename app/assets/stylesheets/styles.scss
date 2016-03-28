@@ -1,0 +1,59 @@
+/* VARIABLES */
+$background: #d8e9ef;
+$navback: #454552;
+$fab: #e85a71;
+$fabhover: #d24f65;
+$menubtnhover: rgba(0, 0, 0, 0.1);
+$text: white;
+
+/* GENERAL */
+
+body{
+  background-color: $background;
+}
+
+/* NAVBAR */
+
+nav{
+  background-color: $navback;
+}
+
+nav ul a:hover{
+  background-color: transparent;
+}
+
+#menudropdown{
+  background-color: $navback;
+}
+
+#menudropdown > li:hover{
+  background-color: $menubtnhover;
+}
+
+#menudropdown > li > a{
+  color: $text;
+}
+
+/* NAVBAR MOBILE */
+
+#mobile-demo{
+  background-color: $navback;
+}
+
+#mobile-demo > li:hover{
+  background-color: $menubtnhover;
+}
+
+#mobile-demo > li > a{
+  color: $text;
+}
+
+/* FAB BUTTON */
+
+.btn-floating{
+  background-color: $fab;
+}
+
+.btn-floating:hover{
+  background-color: $fabhover;
+}

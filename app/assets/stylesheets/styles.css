@@ -1,0 +1,39 @@
+/* VARIABLES */
+/* GENERAL */
+body {
+  background-color: #d8e9ef; }
+
+/* NAVBAR */
+nav {
+  background-color: #454552; }
+
+nav ul a:hover {
+  background-color: transparent; }
+
+#menudropdown {
+  background-color: #454552; }
+
+#menudropdown > li:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#menudropdown > li > a {
+  color: white; }
+
+/* NAVBAR MOBILE */
+#mobile-demo {
+  background-color: #454552; }
+
+#mobile-demo > li:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#mobile-demo > li > a {
+  color: white; }
+
+/* FAB BUTTON */
+.btn-floating {
+  background-color: #e85a71; }
+
+.btn-floating:hover {
+  background-color: #d24f65; }
+
+/*# sourceMappingURL=styles.css.map */
