@@ -1,0 +1,42 @@
+<%= provide(:title, 'Create') %>
+
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <div class="card-title">
+        <h1>
+          <i class="material-icons left ">create</i>Create a new course</h1>
+      </div>
+      <div class="row">
+        <form class="col s12">
+          <div class="input-field col s12">
+            <select class="icons">
+              <option value="" disabled selected>Choose the type</option>
+              <option value="">HTML5/CSS3</option>
+              <option value="">Javascript</option>
+              <option value="">PHP</option>
+            </select>
+          </div>
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Title</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Subject</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Enunciate</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fixed-action-btn">
+
+  <%= link_to "<i class='large material-icons'>save</i>".html_safe, root_path, :class => "btn-floating btn-large btn tooltipped", :data => { position:"left", delay:"50", tooltip:"Save course" } %>
+
+</div>

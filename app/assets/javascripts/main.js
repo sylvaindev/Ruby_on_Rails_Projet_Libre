@@ -1,11 +1,19 @@
-$( document ).ready(function(){
+$(document).on('page:load', function() {
+
    $(".button-collapse").sideNav();
-   
+
    $('.dropdown-button').dropdown({
      inDuration: 300,
      outDuration: 225,
-     gutter: 0, // Spacing from edge
-     belowOrigin: true, // Displays dropdown below the button
-   }
- );
-})
+     belowOrigin: true,
+   });
+
+   $('.tooltipped').tooltip({delay: 50});
+
+   $('select').material_select();
+
+});
+
+$(document).ready(function() {
+    $('select').material_select();
+  });

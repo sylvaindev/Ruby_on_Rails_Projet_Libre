@@ -6,12 +6,23 @@ body {
 a {
   cursor: pointer; }
 
+h1 {
+  font-size: 1.8em;
+  color: #454552; }
+
+h2 {
+  font-size: 0.8em;
+  color: #454552; }
+
 /* NAVBAR */
 nav {
   background-color: #454552; }
 
 nav ul a:hover {
   background-color: transparent; }
+
+nav > div > ul.right.hide-on-med-and-down > li:hover {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 #menudropdown {
   background-color: #454552; }
@@ -51,9 +62,25 @@ header > nav > div > a.brand-logo > img {
   bottom: 45px;
   right: 24px; }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 892px) {
-  nav .brand-logo {
-    margin-left: 0px; } }
+/* CREATE */
+.card {
+  margin-top: 25px; }
+
+.card-title > h1 > i {
+  font-size: 1.1em;
+  color: #4ea1d3; }
+
+.card-title > h2 {
+  padding-top: 25px; }
+
+.dropdown-content li > span {
+  color: #454552; }
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #4ea1d3;
+  box-shadow: 0 1px 0 0 #4ea1d3; }
+
+input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #4ea1d3; }
 
 /*# sourceMappingURL=styles.css.map */

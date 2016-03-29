@@ -5,6 +5,9 @@ $fab: #e85a71;
 $fabhover: #d24f65;
 $menubtnhover: rgba(0, 0, 0, 0.1);
 $text: white;
+$spacetop: 25px;
+$elementcolor: #4ea1d3;
+$title: #454552;
 
 /* GENERAL */
 
@@ -16,6 +19,16 @@ a{
   cursor: pointer;
 }
 
+h1{
+  font-size: 1.8em;
+  color: $title;
+}
+
+h2{
+  font-size: 0.8em;
+  color: $title;
+}
+
 /* NAVBAR */
 
 nav{
@@ -24,6 +37,10 @@ nav{
 
 nav ul a:hover{
   background-color: transparent;
+}
+
+nav > div > ul.right.hide-on-med-and-down > li:hover{
+  background-color: $menubtnhover;
 }
 
 #menudropdown{
@@ -77,10 +94,30 @@ header > nav > div > a.brand-logo > img{
   right: 24px;
 }
 
-/* MEDIA QUERIES */
+/* CREATE */
 
-@media screen and (max-width: 892px) {
-  nav .brand-logo{
-    margin-left: 0px;
-  }
+.card{
+  margin-top: $spacetop;
+}
+
+.card-title > h1 > i{
+  font-size: 1.1em;
+  color: $elementcolor;
+}
+
+.card-title > h2{
+  padding-top: $spacetop;
+}
+
+.dropdown-content li > span{
+  color: $title;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]){
+  border-bottom: 1px solid $elementcolor;
+  box-shadow: 0 1px 0 0 $elementcolor;
+}
+
+input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label{
+  color: $elementcolor;
 }
