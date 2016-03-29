@@ -1,5 +1,56 @@
+<div class="container">
+  <div class="row">
+    <div class="col m12">
+      <div class="row">
+        <div class="col m4">
+          <div class="card small">
+            <div class="card-image">
+              <%= image_tag("html5.jpg", :alt => "html5") %>
+              <span class="card-title">HTML5/CSS3</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Start courses</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m4">
+          <div class="card small">
+            <div class="card-image">
+              <%= image_tag("javascript.png", :alt => "javascript") %>
+              <span class="card-title">JavaScript</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Start courses</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m4">
+          <div class="card small">
+            <div class="card-image">
+              <%= image_tag("php.png", :alt => "php") %>
+              <span class="card-title">PHP</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Start courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="fixed-action-btn">
 
-  <%= link_to "<i class='large material-icons'>mode_edit</i>".html_safe, create_path, :class => "btn-floating btn-large btn tooltipped", :data => { position:"left", delay:"50", tooltip:"Create courses" } %>
+  <%= link_to "<i class='large material-icons'>add</i>".html_safe, create_path, :class => "btn-floating btn-large btn tooltipped", :data => { position:"left", delay:"50", tooltip:"Create courses" } %>
 
 </div>

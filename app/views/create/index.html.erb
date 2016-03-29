@@ -13,7 +13,7 @@
             <select class="icons">
               <option value="" disabled selected>Choose the type</option>
               <option value="">HTML5/CSS3</option>
-              <option value="">Javascript</option>
+              <option value="">JavaScript</option>
               <option value="">PHP</option>
             </select>
           </div>
@@ -38,5 +38,11 @@
 <div class="fixed-action-btn">
 
   <%= link_to "<i class='large material-icons'>save</i>".html_safe, root_path, :class => "btn-floating btn-large btn tooltipped", :data => { position:"left", delay:"50", tooltip:"Save course" } %>
+
+  <ul>
+    <li>
+      <%= link_to "<i class='large material-icons'>clear</i>".html_safe, root_path, :class => "btn-floating tooltipped", :data => { position:"left", delay:"50", tooltip:"Cancel" } %>
+    </li>
+  </ul>
 
 </div>

@@ -7,7 +7,7 @@ a {
   cursor: pointer; }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: #454552; }
 
 h2 {
@@ -61,6 +61,13 @@ header > nav > div > a.brand-logo > img {
 .fixed-action-btn {
   bottom: 45px;
   right: 24px; }
+
+/* HOME COURSES */
+.card-content > p {
+  color: #454552 !important; }
+
+.card-action > a {
+  color: #4ea1d3 !important; }
 
 /* CREATE */
 .card {
